@@ -10,12 +10,11 @@ def is_palindrom(str):
   dq.extend(str.lower().replace(' ', ''))
 
   while len(dq) > 1:
-    r = dq.pop()
-    l = dq.popleft()
-    if r != l:
+    right_char = dq.pop()
+    left_char = dq.popleft()
+    if right_char != left_char:
       return False
   return True
         
-
-#print(is_palindrom("rokttckor"))
+# print(is_palindrom("rokttkor"))
 
