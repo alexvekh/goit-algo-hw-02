@@ -16,9 +16,7 @@ def process_request():
         print("Processed request:", request, "- In the queue stay ", queue.qsize(), " requests.")
     else:
         print("No requests in queue.")
-
-  
-
+ 
 def main():
   while count < 10000:
       generate_request()
