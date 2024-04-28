@@ -1,5 +1,4 @@
 from queue import Queue
-import msvcrt  # For keyboard input
 
 count = 0
 queue = Queue()
@@ -21,24 +20,9 @@ def process_request():
   
 
 def main():
-  queue = Queue()
-  print("Press [Tab] for generate new request, [Space] - for proceess, [Esc] - exit   ")
-
-  while True:
-
-    if msvcrt.kbhit():  # Check if a key is pressed
-      key = msvcrt.getch().decode()
-
-      if key == chr(9):  # Check for Tab key
-        generate_request()
-
-      if key == chr(32):
-        process_request()
-        
-
-      elif key == chr(27):  # Check for escape (ESC key has ASCII code 27)
-        print("Bye-bye")
-        break
+  while count < 10000:
+      generate_request()
+      process_request()
 
 if __name__ == "__main__":
     main()
