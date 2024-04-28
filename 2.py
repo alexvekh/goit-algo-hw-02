@@ -17,5 +17,5 @@ def is_palindrom(str):
   return True
         
 
-#is_palindrom("rokttckor")
+#print(is_palindrom("rokttckor"))
 
