@@ -18,8 +18,6 @@ def process_request():
     else:
         print("No requests in queue.")
 
-  
-
 def main():
   queue = Queue()
   print("Press [Tab] for generate new request, [Space] - for proceess, [Esc] - exit   ")
